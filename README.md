@@ -1,8 +1,8 @@
 # JavaStudy
 Java设计模式(updating)：
 
-1、[装饰者模式](https://github.com/crazyqiang/JavaStudy/blob/master/MD/Decorator.md)
+1、[Java设计模式之装饰者模式.md](https://github.com/crazyqiang/JavaStudy/blob/master/MD/Decorator.md)
 
-2、[单例模式](https://github.com/crazyqiang/JavaStudy/blob/master/MD/SingleTon.md)
+2、[Java设计模式之单例模式.md](https://github.com/crazyqiang/JavaStudy/blob/master/MD/SingleTon.md)
 
-3、[策略模式](https://github.com/crazyqiang/JavaStudy/blob/master/MD/Strategy.md)
+3、[Java设计模式之策略模式.md](https://github.com/crazyqiang/JavaStudy/blob/master/MD/Strategy.md)
