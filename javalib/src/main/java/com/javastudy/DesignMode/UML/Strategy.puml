@@ -1,0 +1,27 @@
+@startuml
+title 策略模式UML图
+interface Strategy{
+  strategyInterface():void
+}
+
+class ConcreteStrategyA{
+strategyInterface():void
+}
+class ConcreteStrategyB{
+strategyInterface():void
+}
+class ConcreteStrategyC{
+strategyInterface():void
+}
+
+class Context{
+Strategy strategy
+Context():void
+showImage():void
+}
+
+Strategy<|-- ConcreteStrategyA
+Strategy<|-- ConcreteStrategyB
+Strategy<|-- ConcreteStrategyC
+Context-> Strategy:持有Strategy实例
+@enduml
