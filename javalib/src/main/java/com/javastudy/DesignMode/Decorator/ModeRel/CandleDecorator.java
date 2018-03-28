@@ -1,7 +1,7 @@
 package com.javastudy.DesignMode.Decorator.ModeRel;
 
 /**
- *¶¨Òå¾ßÌå×°ÊÎ×ÅÀà
+ *å®šä¹‰å…·ä½“è£…é¥°ç€ç±»
  * Created by MQ on 2017/4/16.
  */
 
@@ -14,7 +14,7 @@ public class CandleDecorator extends Decorator {
 
     @Override
     public String getDescription() {
-        return sweet.getDescription() + "Ò»¸ùÀ¯Öò£¬";
+        return sweet.getDescription() + "ä¸€æ ¹èœ¡çƒ›ï¼Œ";
     }
 
     @Override

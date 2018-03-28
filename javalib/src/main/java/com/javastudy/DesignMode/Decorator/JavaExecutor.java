@@ -12,10 +12,10 @@ public class JavaExecutor {
 
     public static void main(String[] args) {
         Cake cake = new Cake();
-        System.out.println(cake.getDescription() + "总共花费" + cake.cost());
+        System.out.println(cake.getDescription() + "鎬诲叡鑺辫垂" + cake.cost());
         FruitDecorator fruitDecorator = new FruitDecorator(cake);
-        System.out.println(fruitDecorator.getDescription() + "总共花费" + fruitDecorator.cost());
+        System.out.println(fruitDecorator.getDescription() + "鎬诲叡鑺辫垂" + fruitDecorator.cost());
         CandleDecorator candleDecorator = new CandleDecorator(fruitDecorator);
-        System.out.println(candleDecorator.getDescription() + "总共花费" + candleDecorator.cost());
+        System.out.println(candleDecorator.getDescription() + "鎬诲叡鑺辫垂" + candleDecorator.cost());
     }
 }

@@ -5,5 +5,7 @@ class Singleton {
 static uniqueInstance
 static getInstance()
 }
+
 note right of Singleton : uniqueInstance持有唯一的实例，getInstance()是\n静态的，可以全局访问它
+
 @enduml

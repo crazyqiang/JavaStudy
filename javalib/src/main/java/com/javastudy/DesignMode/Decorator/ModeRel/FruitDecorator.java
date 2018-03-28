@@ -1,7 +1,7 @@
 package com.javastudy.DesignMode.Decorator.ModeRel;
 
 /**
- * ¶¨Òå×°ÊÎÕßÀà
+ * å®šä¹‰è£…é¥°è€…ç±»
  * Created by MQ on 2017/4/16.
  */
 
@@ -14,7 +14,7 @@ public class FruitDecorator extends Decorator {
 
     @Override
     public String getDescription() {
-        return sweet.getDescription() + "Ë®¹û£¬";
+        return sweet.getDescription() + "æ°´æžœï¼Œ";
     }
 
     @Override
