@@ -13,7 +13,7 @@ import com.javastudy.DesignMode.Factory.Factory.IceFactory;
 import com.javastudy.DesignMode.Factory.SimpleFactory.DrinkFactory;
 
 /**
- * Created by MQ on 2017/8/9.
+ * 工厂模式 包括简单工厂模式、工厂模式、抽象工厂模式
  */
 
 public class JavaExecutor {

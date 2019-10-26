@@ -30,4 +30,6 @@ dependencies {
     compile project(':javalib')
     compile project(path: ':processor')
     annotationProcessor project(path: ':processor')
+    compile "io.reactivex.rxjava2:rxjava:2.2.2"
+    compile "com.squareup.okhttp3:okhttp:3.1.2"
 }
