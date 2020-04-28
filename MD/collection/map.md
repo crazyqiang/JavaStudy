@@ -260,8 +260,7 @@ final Node<K,V> getNode(int hash, Object key) {
 ```
 get(key)对应的流程图：
 
-![get.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy81ODcxNjMtMTQ3NTU5ZjM4M2VjNDQ0MC5wbmc?x-oss-process=image/format,png)
-![get.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy81ODcxNjMtMTQ3NTU5ZjM4M2VjNDQ0MC5wbmc?x-oss-process=image/format,png)
+![getkey.png](https://upload-images.jianshu.io/upload_images/587163-147559f383ec4440.png?imageMogr2/auto-orient/strip|imageView2/2/w/564)
 
 ### 扩容
 扩容指的是当向HashMap中添加元素时，Node元素总数超过了设定的阈值，那么HashMap就会进行扩容(扩大到2倍)，那么这个设定的阈值跟哪些变量相关呢？上面HashMap源码中有这几个变量：
