@@ -1,4 +1,31 @@
-@[toc]
+<!-- TOC -->
+
+- [HashMap](#HashMap)
+    - [HashMap的存储结构](#HashMap的存储结构)
+        - [初始化](#初始化)
+        - [put&get](#put&get)
+           - [put元素](#put元素)
+           - [get元素](#get元素)
+        - [扩容](#扩容)
+        - [遍历Map](#遍历Map)
+        - [jdk1.8中的优化](#jdk1.8中的优化)
+- [ConcurrentHashMap](#ConcurrentHashMap)
+    - [jdk1.7版本](#jdk1.7版本)
+    - [jdk1.8版本](#jdk1.8版本)
+        - [put元素](#put元素)
+        - [get元素](#get元素)
+    - [1.8中的变化](#1.8中的变化)
+- [LinkedHashMap](#LinkedHashMap)
+    - [内部结构](#内部结构)
+    - [put元素](#put元素)
+    - [get元素](#get元素)
+    - [移除最近最少使用元素](#移除最近最少使用元素)
+- [TreeMap](#TreeMap)
+    - [使用元素自然排序](#使用元素自然排序)
+    - [使用自定义排序](#使用自定义排序)
+- [参考](#参考)
+
+<!-- /TOC -->
 
 HashMap、ConcurrentHashMap、LinkedHashMap、TreeMap与Map的关系：
 
@@ -129,8 +156,7 @@ Node中有4个成员变量：
 - value: value值
 - next: HashMap使用哈希表(一维数组)存储元素，当出现哈希冲突(即不同元素对应上table数组中的同一索引位置)时，HashMap采用链地址法解决冲突，可以简单认为table数组中的每个存储都是一个链表结构，链表的节点是Node，Node.next指向的是链表中的下一个Node节点.
 
-### put & get
-
+### put&get
 #### put元素
 ```
 public V put(K key, V value) {
@@ -295,7 +321,6 @@ ConcurrentHashMap在1.7版本的大致流程：
 ConcurrentHashMap相对于Hashtable或Collections.synchronizedMap(hashmap)来说是高效的，尤其是get元素时，不需要加锁，但是如果链表中的元素比较多时，遍历效率还是比较低(跟HashMap类似)，接着看在1.8版本中做了哪些结构变化。
 
 ### jdk1.8版本
-
 #### put元素
 ```
 public V put(K key, V value) {
@@ -407,7 +432,6 @@ public V get(Object key) {
     return null;
 }
 ```
-
 ### 1.8中的变化
 - 1.7中同步策略采用的是Segment分段锁(内部实现是ReentrantLock)，1.8中采用的是CAS+synchronized，效率更高；
 - 1.8中引入了红黑树(跟HashMap一样)，当链表过长时直接将链表转换成红黑树，查找效率从O(n)提升到O(logn)。
