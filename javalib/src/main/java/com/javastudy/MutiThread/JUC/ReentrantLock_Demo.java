@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Created by mq on 2019-07-15 12:35
  * mqcoder90@gmail.com
  */
-public class ReentrantLockDemo {
+public class ReentrantLock_Demo {
 
     public static void main(String[] args) throws InterruptedException {
         //初始化 ReentrantLock

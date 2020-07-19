@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * Created by mq on 2019-09-02 13:07
  * mqcoder90@gmail.com
  */
-public class ReentrantReadWriteLockDemo {
+public class ReentrantReadWriteLock_Demo {
     private static final String THREAD_READ = "读线程";
     private static final String THREAD_WRITE = "写线程";
 
